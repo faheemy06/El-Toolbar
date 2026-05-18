@@ -1,7 +1,7 @@
 body {
-  background: #f0f0f0;
+  background: transparent;
   margin: 0;
-  padding: 6px;
+  padding: 12px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   user-select: none;
   overflow: hidden;
@@ -11,32 +11,33 @@ html {
   background: transparent;
 }
 
-/* Changes the bar from a long row to a tight, neat column */
+/* Stretches the dark background to perfectly fill the task pane space */
 #toolbar {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #1e222d;
   border-radius: 8px;
-  padding: 8px;
+  padding: 16px 12px;
   border: 1px solid #363a45;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  width: 76px; /* Perfect width to hold exactly two buttons side-by-side */
+  width: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
 /* The 6 drag dots sitting cleanly right at the top */
 #drag-handle {
   display: grid;
-  grid-template-columns: repeat(3, 4px); /* 3 dots across */
+  grid-template-columns: repeat(3, 4px);
   gap: 3px;
-  padding-bottom: 8px;
-  margin-bottom: 4px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
   cursor: move;
   opacity: 0.5;
   width: 100%;
   justify-content: center;
-  border-bottom: 1px solid #2a2e39; /* Subtle divider under the dots */
+  border-bottom: 1px solid #2a2e39;
 }
 
 #drag-handle:hover { 
@@ -50,22 +51,23 @@ html {
   border-radius: 50%;
 }
 
-/* This grid container forces the icons to sit 2 per row downward */
+/* This grid container cleanly structures the buttons 2-per-row downward */
 .button-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Exactly 2 columns */
-  gap: 6px;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
   width: 100%;
+  justify-items: center;
 }
 
 .tool-btn {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background: transparent;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #b2b5be;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   display: flex;
