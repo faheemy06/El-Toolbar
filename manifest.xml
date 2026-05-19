@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp 
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:type="ContentApp">
+  
+  <Id>6f9b8c7d-5a4e-4321-b1a2-c3d4e5f6a7b8</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>ApexDesign</ProviderName>
+  <DefaultLocale>en-GB</DefaultLocale>
+  <DisplayName DefaultValue="El-Toolbar" />
+  <Description DefaultValue="Minimalist finance toolbar for Excel." />
+  
+  <IconUrl DefaultValue="https://img.icons8.com/color/32/microsoft-excel-2019.png" />
+  <HighResolutionIconUrl DefaultValue="https://img.icons8.com/color/64/microsoft-excel-2019.png" />
+  <SupportUrl DefaultValue="https://github.com/faheemy06/El-Toolbar" />
+  
+  <Hosts>
+    <Host Name="Workbook" />
+  </Hosts>
+  
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://faheemy06.github.io/El-Toolbar/index.html" />
+    <RequestedWidth>160</RequestedWidth>
+    <RequestedHeight>280</RequestedHeight>
+  </DefaultSettings>
+  
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>
